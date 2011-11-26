@@ -18,11 +18,6 @@ require("vicious")
 -- Themes define colours, icons, and wallpapers
 beautiful.init(os.getenv("HOME") .. "/.config/awesome/theme.lua")
 
-wallpaper_path = os.getenv("HOME") .. "/.config/awesome/smoke.jpg"
-
-theme = beautiful.get()
-theme.wallpaper_cmd = { "awsetbg " .. wallpaper_path }
-
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
 editor = os.getenv("EDITOR") or "editor"

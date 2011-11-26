@@ -4,6 +4,9 @@
 
 theme = {}
 
+wallpaper_path = os.getenv("HOME") .. "/.config/awesome/smoke.jpg"
+theme.wallpaper_cmd = { "awsetbg " .. wallpaper_path }
+
 theme.font          = "sans 8"
 
 theme.bg_normal     = "#222222"
