@@ -295,6 +295,8 @@ globalkeys = awful.util.table.join(
 
     -- User applications 
     awful.key({ modkey,           }, "x", function () awful.util.spawn("firefox")         end),
+    awful.key({ modkey,           }, "v", function () awful.util.spawn("VirtualBox")      end),
+    awful.key({ modkey,           }, "d", function () awful.util.spawn("deluge")          end),
 
     -- Throw mouse away
     awful.key({ modkey, "Control" }, "m", function() moveMouse(safeCoords.x, safeCoords.y) end)
